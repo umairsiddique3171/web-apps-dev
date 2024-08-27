@@ -1,5 +1,5 @@
-Display property in css: 
-	In html, there are three types of elements: 
+Display property in CSS: 
+	In HTML, there are three types of elements: 
 		1. block element (takes up the entire line) (e.g. p element)
 		2. inline-block element (only takes as much space as needed) (e.g. img element)
 		3. inline element (appears within a line of text) (e.g. span element)
@@ -7,4 +7,10 @@ Display property in css:
 Nested Layout Technique:
 	Two types of layouts:
 		1. Vertical Layout
-		2. Horizantol Layout
+		2. Horizontal Layout
+
+Inline Styles: Writing CSS inside html lines.
+
+<div style="display:grid; grid-template-columns:100px 1fr;></div>   ==> Here, fr is 1 free space
+
+Flexbox is similar to CSS grid for creating layouts but it is more flexible.
