@@ -7,147 +7,254 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <style>
-      .thumbnail{
-        width:100%;
-        /*object-fit,object-position*/
-        cursor:pointer;
-      }
-      .channel-picture{
-        width:35px;
-        border-radius:50px;
-      }
-      p{
-        font-family: Roboto, Arial;
-        margin-top:0px;
-        margin-bottom:0px;
-      }
-      .video-title{
-        font-size:14px;
-        font-weight:bold;
-        text-align:left;
-        line-height: 18px;
-        cursor:pointer;
-      }
-      .video-host{
-        margin-top:8px;
-        font-size:12px;
-        color:rgb(96,96,96);
-        cursor:pointer;
-      }
-      .video-stats{
-        margin-bottom:16px;
-        font-size:12px;
-        color:rgb(96, 96, 96);
-      }
-      .ver-div-01{
-        margin-bottom:12px;
-      }
-      .ver-div-02{
-        display:grid;
-        grid-template-columns: 50px 1fr;
-      }
-      .main-grid{
-        display:grid; 
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap:15px;
-        row-gap:40px;
-      }
-    </style>
-
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
   </head>
   <body>
-    <div class="main-grid">
-      <div class="main-div">
-        <div class="ver-div-01">
-          <img class = "thumbnail" src="thumbnails/thumbnail-1.webp">
-        </div>
-        <div class="ver-div-02">
-          <div class="hor-div-01">
-            <img class = "channel-picture" src="channel-pictures/channel-1.jpg">
-          </div>
-          <div class="hor-div-02">
-            <p class="video-title">Apple iPhone 16 Series will be Different! *Leaks*</p>
-            <p class="video-host">Tech Burner</p>
-            <p class="video-stats">1.6M views &#183; 8 days ago</p>
-          </div>
-        </div>
+    <header class="header">
+      <div class="left-section-container">
+        <img class="hamburger-menu" src="icons/header/hamburger-menu.svg">
+        <img class="youtube-logo" src="icons/header/youtube-logo.svg">
       </div>
-      <div class="main-div">
-        <div class="ver-div-01">
-          <img class = "thumbnail" src="thumbnails/thumbnail-2.webp">
-        </div>
-        <div class="ver-div-02">
-          <div class="hor-div-01">
-            <img class = "channel-picture" src="channel-pictures/channel-2.jpg">
-          </div>
-          <div class="hor-div-02">
-            <p class="video-title">Making my bones UNBREAKABLE with real-life NANOTECH</p>
-            <p class="video-host">Hacksmith Industries</p>
-            <p class="video-stats">3.6M views &#183; 3 weeks ago</p>
-          </div>
-        </div>
+      <div class="middle-section-container">
+          <input class="search-bar" type="text" placeholder="Search">
+          <button class="search-button">
+            <img class="search-button-img" src="icons/header/search.svg">
+            <p class="tooltip">Search</p>
+          </button>
+          <button class="voice-search-button">
+            <img class="voice-search-img" src="icons/header/voice-search-icon.svg">
+            <p class="tooltip">Search with your voice</p>
+          </button>
       </div>
-      <div class="main-div">
-        <div class="ver-div-01">
-          <img class = "thumbnail" src="thumbnails/thumbnail-3.webp">
+      <div class="right-section-container">
+        <div class="upload-img-container">
+          <img class="upload-img" src="icons/header/upload.svg">
+          <p class="tooltip">Create</p>
         </div>
-        <div class="ver-div-02">
-          <div class="hor-div-01">
-            <img class = "channel-picture" src="channel-pictures/channel-3.jpg">
-          </div>
-          <div class="hor-div-02">
-            <p class="video-title">How NVIDIA just beat every other tech company</p>
-            <p class="video-host">Mrwhosetheboss</p>
-            <p class="video-stats">1.7M views &#183; 1 month ago</p>
-          </div>
+        <div class="notifications-icon-container">
+          <img class="notifications-img" src="icons/header/notifications.svg">
+          <p class="notifications-count">3</p>
+          <p class="tooltip">Notifications</p>
         </div>
+        <img class="profile-img" src="channel-pictures/profile-picture.png">
       </div>
-      <div class="main-div">
-        <div class="ver-div-01">
-          <img class = "thumbnail" src="thumbnails/thumbnail-4.webp">
-        </div>
-        <div class="ver-div-02">
-          <div class="hor-div-01">
-            <img class = "channel-picture" src="channel-pictures/channel-4.jpg">
+    </header>
+    <nav class="side-bar">
+      <button class="home-button">
+        <img class="home-button-img" src="icons/sidebar/home.svg">
+        <p class="home-button-text">Home</p>
+      </button>
+      <button class="subscriptions-button">
+        <img class="subscriptions-button-img" src="icons/sidebar/subscriptions.svg">
+        <p class="subscriptions-button-text">Subscriptions</p>
+      </button>
+      <button class="shorts-button">
+        <img class="shorts-button-img" src="icons/sidebar/shorts.svg">
+        <p class="shorts-button-text">Shorts</p>
+      </button>
+      <button class="library-button">
+        <img class="library-button-img" src="icons/sidebar/library.svg">
+        <p class="library-button-text">You</p>
+      </button>
+    </nav>
+    <main>
+      <section class="main-grid">
+        <div class="main-container">
+          <div class="ver-container-01">
+            <img class = "thumbnail" src="thumbnails/thumbnail-1.webp">
+            <p class="video-time">8&#58;44</p>
           </div>
-          <div class="hor-div-02">
-            <p class="video-title">WhistlinDiesel Cybertruck Durability Test &#35;1</p>
-            <p class="video-host">WhistlinDiesel </p>
-            <p class="video-stats">21M views &#183; 3 weeks ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="main-div">
-        <div class="ver-div-01">
-          <img class = "thumbnail" src="thumbnails/thumbnail-5.webp">
-        </div>
-        <div class="ver-div-02">
-          <div class="hor-div-01">
-            <img class = "channel-picture" src="channel-pictures/channel-5.jpg">
-          </div>
-          <div class="hor-div-02">
-            <p class="video-title">All the Best Action Scenes from the Original Transformers Trilogy</p>
-            <p class="video-host">Boxoffice+</p>
-            <p class="video-stats">8.5M views &#183; 3 months ago</p>
-          </div>
-        </div>
-      </div>
-      <div class="main-div">
-        <div class="ver-div-01">
-          <img class = "thumbnail" src="thumbnails/thumbnail-6.webp">
-        </div>
-        <div class="ver-div-02">
-          <div class="hor-div-01">
-            <img class = "channel-picture" src="channel-pictures/channel-6.jpg">
-          </div>
-          <div class="hor-div-02">
-            <p class="video-title">I tested the WEIRDEST footballs!</p>
-            <p class="video-host">Jack's Fun Shack</p>
-            <p class="video-stats">949K views &#183; 1 month ago</p>
+          <div class="ver-container-02">
+            <div class="hor-container-01">
+              <img class = "channel-picture" src="channel-pictures/channel-1.jpg">
+            </div>
+            <div class="hor-container-02">
+              <p class="video-title">Apple iPhone 16 Series will be Different! *Leaks*</p>
+              <p class="video-host">Tech Burner</p>
+              <p class="video-stats">1.6M views &#183; 8 days ago</p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="main-container">
+          <div class="ver-container-01">
+            <img class = "thumbnail" src="thumbnails/thumbnail-2.webp">
+            <p class="video-time">43&#58;01</p>
+          </div>
+          <div class="ver-container-02">
+            <div class="hor-container-01">
+              <img class = "channel-picture" src="channel-pictures/channel-2.jpg">
+            </div>
+            <div class="hor-container-02">
+              <p class="video-title">Making my bones UNBREAKABLE with real-life NANOTECH</p>
+              <p class="video-host">Hacksmith Industries</p>
+              <p class="video-stats">3.6M views &#183; 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="ver-container-01">
+            <img class = "thumbnail" src="thumbnails/thumbnail-3.webp">
+            <p class="video-time">9&#58;20</p>
+          </div>
+          <div class="ver-container-02">
+            <div class="hor-container-01">
+              <img class = "channel-picture" src="channel-pictures/channel-3.jpg">
+            </div>
+            <div class="hor-container-02">
+              <p class="video-title">How NVIDIA just beat every other tech company</p>
+              <p class="video-host">Mrwhosetheboss</p>
+              <p class="video-stats">1.7M views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="ver-container-01">
+            <img class = "thumbnail" src="thumbnails/thumbnail-4.webp">
+            <p class="video-time">21&#58;55</p>
+          </div>
+          <div class="ver-container-02">
+            <div class="hor-container-01">
+              <img class = "channel-picture" src="channel-pictures/channel-4.jpg">
+            </div>
+            <div class="hor-container-02">
+              <p class="video-title">WhistlinDiesel Cybertruck Durability Test &#35;1</p>
+              <p class="video-host">WhistlinDiesel </p>
+              <p class="video-stats">21M views &#183; 3 weeks ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="ver-container-01">
+            <img class = "thumbnail" src="thumbnails/thumbnail-5.webp">
+            <p class="video-time">30&#58;00</p>
+          </div>
+          <div class="ver-container-02">
+            <div class="hor-container-01">
+              <img class = "channel-picture" src="channel-pictures/channel-5.jpg">
+            </div>
+            <div class="hor-container-02">
+              <p class="video-title">All the Best Action Scenes from the Original Transformers Trilogy</p>
+              <p class="video-host">Boxoffice+</p>
+              <p class="video-stats">8.5M views &#183; 3 months ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="ver-container-01">
+            <img class = "thumbnail" src="thumbnails/thumbnail-6.webp">
+            <p class="video-time">14&#58;20</p>
+          </div>
+          <div class="ver-container-02">
+            <div class="hor-container-01">
+              <img class = "channel-picture" src="channel-pictures/channel-6.jpg">
+            </div>
+            <div class="hor-container-02">
+              <p class="video-title">I tested the WEIRDEST footballs!</p>
+              <p class="video-host">Jack's Fun Shack</p>
+              <p class="video-stats">949K views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="ver-container-01">
+            <img class = "thumbnail" src="thumbnails/thumbnail-7.webp">
+            <p class="video-time">28&#58;37</p>
+          </div>
+          <div class="ver-container-02">
+            <div class="hor-container-01">
+              <img class = "channel-picture" src="channel-pictures/channel-7.jpg">
+            </div>
+            <div class="hor-container-02">
+              <p class="video-title">I BOUGHT A WRECKED LAMBORGHININ URUS FOR MY GIRLFRIEND</p>
+              <p class="video-host">Mat Armstrong</p>
+              <p class="video-stats">4.4M views &#183; 1 month ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="ver-container-01">
+            <img class = "thumbnail" src="thumbnails/thumbnail-8.webp">
+            <p class="video-time">39&#58;48</p>
+          </div>
+          <div class="ver-container-02">
+            <div class="hor-container-01">
+              <img class = "channel-picture" src="channel-pictures/channel-8.jpg">
+            </div>
+            <div class="hor-container-02">
+              <p class="video-title">ISLAMABAD is the Place To Be in Pakistan</p>
+              <p class="video-host">Alan & Shanon</p>
+              <p class="video-stats">258K views &#183; 7 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="ver-container-01">
+            <img class = "thumbnail" src="thumbnails/thumbnail-9.webp">
+            <p class="video-time">29&#58;02</p>
+          </div>
+          <div class="ver-container-02">
+            <div class="hor-container-01">
+              <img class = "channel-picture" src="channel-pictures/channel-9.jpg">
+            </div>
+            <div class="hor-container-02">
+              <p class="video-title">Shark Tank US | Mark Cuban's Top 3 Biggest Deals</p>
+              <p class="video-host">Sony Pictures Television</p>
+              <p class="video-stats">6.6M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="ver-container-01">
+            <img class = "thumbnail" src="thumbnails/thumbnail-10.webp">
+            <p class="video-time">18&#58;42</p>
+          </div>
+          <div class="ver-container-02">
+            <div class="hor-container-01">
+              <img class = "channel-picture" src="channel-pictures/channel-10.jpg">
+            </div>
+            <div class="hor-container-02">
+              <p class="video-title">Lexus Test Drive | Car Shopping with £80,000</p>
+              <p class="video-host">Yiannimize</p>
+              <p class="video-stats">520K views &#183; 3 days ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="ver-container-01">
+            <img class = "thumbnail" src="thumbnails/thumbnail-11.webp">
+            <p class="video-time">10&#58;27</p>
+          </div>
+          <div class="ver-container-02">
+            <div class="hor-container-01">
+              <img class = "channel-picture" src="channel-pictures/channel-11.jpg">
+            </div>
+            <div class="hor-container-02">
+              <p class="video-title">A Day in My Life Including Gym Work Eating</p>
+              <p class="video-host">Top Beckles</p>
+              <p class="video-stats">48K views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+        <div class="main-container">
+          <div class="ver-container-01">
+            <img class = "thumbnail" src="thumbnails/thumbnail-12.webp">
+            <p class="video-time">11&#58;49</p>
+          </div>
+          <div class="ver-container-02">
+            <div class="hor-container-01">
+              <img class = "channel-picture" src="channel-pictures/channel-12.jpg">
+            </div>
+            <div class="hor-container-02">
+              <p class="video-title">Baarish</p>
+              <p class="video-host">Sharum Ki Sketchbook</p>
+              <p class="video-stats">4.6M views &#183; 1 year ago</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

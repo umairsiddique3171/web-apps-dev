@@ -13,4 +13,17 @@ Inline Styles: Writing CSS inside html lines.
 
 <div style="display:grid; grid-template-columns:100px 1fr;></div>   ==> Here, fr is 1 free space
 
-Flexbox is similar to CSS grid for creating layouts but it is more flexible.
+Flexbox is similar to a CSS grid for creating layouts but is more flexible.
+
+Major Skills in HTML/CSS:
+	1. Nested Layouts
+	2. Display: block / inline-block;
+	3. Grid
+	4. Flexbox
+	5. Position
+
+CSS Specificity: Specificity determines which CSS rules are applied by giving different weights to different types of selectors, with more specific selectors overriding less specific ones.
+
+CSS Inheritance: Inheritance allows certain CSS properties to be passed down from parent elements to their child elements, unless explicitly overridden.
+
+Semantic Elements: Semantic elements in HTML provide meaning about the content to both the browser and search engine robots, enhancing accessibility and SEO by clearly defining the role of the content on a webpage. For example, <header> defines introductory content or navigation links, <article> represents a self-contained piece of content, <footer> marks the bottom section typically containing metadata or links, <nav> indicates a set of navigation links, <section> defines a thematic grouping of content, and <aside> represents content related to the main content, like sidebars or callouts.
